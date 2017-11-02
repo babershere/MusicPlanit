@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music Planit</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+  
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+        
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron text-center">
+                <h1>MUSIC PLANIT </h1>
+                <img src="assets/images/musicplanit.png" width="200" height="200">
+                <p>Concert Planning Done Right!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-primary">
+    <div class="panel-heading text-center">Where will can we take you next?</div>
+    <div class="panel-body text-center">
+    Please Log in:
+    <br>
+        
+        <!-- Button to open the modal login form -->
+        <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+        
+        <!-- The Modal -->
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        
+            <!-- Modal Content -->
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                    <img src="assets/images/img_avatar2.png" alt="Avatar" class="avatar img-circle img-responsive" height="200" width="200">
+                </div>
+        
+                <div class="container">
+                    <label>
+                        <b>Username</b>
+                    </label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <br>
+                    <label>
+                        <b>Password</b>
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <br>
+                    <button type="submit">Login</button>
+                    <input type="checkbox" checked="checked"> Remember me
+                </div>
+        
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot
+                        <a href="#">password?</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+    </div>
+    </div>
+
+
+        </div>
+
+        <script type="text/javascript" src="assets/app.js"></script>
+    </body>
+    
+    </html>
