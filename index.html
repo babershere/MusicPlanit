@@ -6,43 +6,52 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-  
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-        
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="row">
-            <div class="jumbotron text-center">
-                <h1>MUSIC PLANIT </h1>
-                <img src="assets/images/musicplanit.png" width="200" height="200">
-                <p>Concert Planning Done Right!</p>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="#">Music Planit</a>
             </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" id="searchString">
+                    </div>
+                    <button type="submit" class="btn btn-default" id="searchBtn">Submit</button>
+                </form>
+                     <a class="navbar-brand" href="#">Concert Planning Done Right!</a>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
         <div class="row">
             <div class="panel panel-primary">
     <div class="panel-heading text-center">Where will can we take you next?</div>
     <div class="panel-body text-center">
     Please Log in:
     <br>
-        
         <!-- Button to open the modal login form -->
         <button onclick="document.getElementById('id01').style.display='block'">Login</button>
-        
         <!-- The Modal -->
         <div id="id01" class="modal">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        
             <!-- Modal Content -->
             <form class="modal-content animate" action="/action_page.php">
                 <div class="imgcontainer">
                     <img src="assets/images/img_avatar2.png" alt="Avatar" class="avatar img-circle img-responsive" height="200" width="200">
                 </div>
-        
                 <div class="container">
                     <label>
                         <b>Username</b>
@@ -57,7 +66,6 @@
                     <button type="submit">Login</button>
                     <input type="checkbox" checked="checked"> Remember me
                 </div>
-        
                 <div class="container" style="background-color:#f1f1f1">
                     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                     <span class="psw">Forgot
@@ -66,16 +74,10 @@
                 </div>
             </form>
         </div>
-
-
-
     </div>
     </div>
     </div>
-
-
         </div>
-
         <script type="text/javascript" src="assets/app.js"></script>
     </body>
     
