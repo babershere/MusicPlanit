@@ -1,2 +1,2 @@
 # MusicPlanit
-Group Project - Alex, Q, John, and Rey
+Concert planning web app 
